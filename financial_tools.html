@@ -3,10 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <title>Financial Tools</title>
+        <style type='text/css' rel="stylesheet" href="style.css"></style>
     </head>
 
     <body>
-        <h1>Financial Tools</h1>
+        <h1>Rental Evaluation</h1>
+<!-- Create Label and input Fields for
+var property = {
+    purchasePrice: 119000,
+    monthlyRent: 1200,
+    annualIncome: 14400,
+    vacancyRate: 720,
+    annualExpenses: 5560, // HOA 380 * 12 + 1000 for taxes & insurance
+--><p>
+        <label for='purchase_price' class='rent-ratio-label'>Purchase Price: </label>
+        <input id='purchase_price' value=120000>
+        </p>
+    <p>
+        <label for='monthly_rent' class='rent-ratio-label'>Monthly Rent: </label>
+        <input id='monthly_rent' value=1100>
+        </p>
+    <p>
+        <label for='annual_income' class='rent-ratio-label'>Annual Income: </label>
+        <input id='annual_income' value=14000>
+        </p>
+    <p>
+        <label for='Vacancy Rate' class='rent-ratio-label'>Vacancy Rate: </label>
+        <input id='vacancy_rate' value=500>
+        </p>
+    <p>
+        <label for='annual_expense' class='rent-ratio-label'>Annual Expense </label>
+        <input id='annual_expense' value=5800>
+        </p>
+    <p>
+        <button class='calc_button'>Enter</button>
+    </p>
+        <div class='rent-ratio' id='rentratio-output'></div>
+        <div class='rent-ratio' id='caprate-output'></div>
         <script src="rental_eval_tools.js"></script>
     </body>
 </html>
